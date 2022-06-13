@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { images } from "../../constants";
 
+import "./Navbar.css";
+
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -25,6 +27,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-around",
     width: "40vw",
     marginLeft: "15vw",
+    cursor: "pointer",
     "@media (max-width: 750px)": {
       display: "none",
     },
@@ -88,7 +91,7 @@ const useStyles = makeStyles(() => ({
     width: "35px",
     height: "35px",
     color: "black",
-    margin: "0.5rem 42vw",
+    margin: "0.5rem 32vw",
     marginTop: "30px",
   }
 }));
@@ -107,17 +110,18 @@ const Navbar = () => {
             alt="logo"
             className={classes.app__navbar_logo}
           />
-          <div className={classes.title}>
+          <ul className="app__navbar-links">
             {["home", "about", "work", "skills", "contact"].map(
               (item, index) => {
                 return (
                   <li key={index}>
+                    <div />
                     <a>{item}</a>
                   </li>
                 );
               }
             )}
-          </div>
+          </ul>
           <div className={classes.app__navbar_menu}>
             <IconButton className={classes.menu}>
               <MenuIcon

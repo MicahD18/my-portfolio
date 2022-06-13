@@ -1,0 +1,37 @@
+li {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: blue;
+}
+
+.app__navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-around;
+    width: 40vw;
+    margin-left: 15vw;
+    cursor: pointer;
+}
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+.app__navbar-links li div {
+    width: 35px;
+    height: 5px;
+    background: transparent;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    .app__navbar-links {
+        display: none;
+    }
+}
