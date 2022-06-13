@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Header } from "./containers";
 import { Navbar } from "./components";
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Header />
       </div>
     );
   }

@@ -80,6 +80,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
+    "@media (min-width: 750px)": {
+      display: "none"
+    }
   },
   close__button: {
     width: "35px",
