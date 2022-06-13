@@ -11,7 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   menu: {
     "@media (min-width: 750px)": {
       display: "none",
@@ -88,7 +88,8 @@ const useStyles = makeStyles((theme) => ({
     width: "35px",
     height: "35px",
     color: "black",
-    margin: "0.5rem 1rem",
+    margin: "0.5rem 42vw",
+    marginTop: "30px",
   }
 }));
 
