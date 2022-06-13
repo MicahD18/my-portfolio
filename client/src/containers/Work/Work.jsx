@@ -1,26 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import "./Work.css";
 
+import works from "./workData";
+
 const Work = () => {
-  const [activeFilter, setactiveFilter] = useState("All");
-  const [animateCard, setanimateCard] = useState({ y: 0, opacity: 1 });
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [filterWork, setFilterWork] = useState([]);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  const works = [
-    {
-      imgUrl: "",
-      name: "web app",
-      projectLink: "",
-      codeLink: "",
-      title: "E-Commerce Website",
-      description: "An E-Commerce App built using React JS.",
-      tags: ["Web App", "React"],
-    },
-  ];
+  const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
 
-  const handleWorkFilter = (item) => {};
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+
+      if (item === "All") {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags === item));
+      }
+    }, 500);
+  };
 
   return (
     <div>
@@ -28,12 +32,15 @@ const Work = () => {
         My Creative <span>Portfolio</span>
       </h2>
 
-      <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "All"].map((item, index) => {
+      {/* <div className="app__work-filter">
+        {["React JS", "Javascript", "Node JS", "All"].map((item, index) => {
+          
           return (
             <div
               key={index}
-              onClick={() => handleWorkFilter(item)}
+              onClick={() => {
+                handleWorkFilter(item)
+              }}
               className={`app__work-filter-item app__flex p-text ${
                 activeFilter === item ? "item-active" : ""
               }`}
@@ -42,7 +49,7 @@ const Work = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
       <motion.div
         animate={animateCard}

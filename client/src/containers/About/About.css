@@ -49,5 +49,5 @@
   }
   
   .head-text span {
-    color: blue;
+    color: var(--secondary-color);
   }

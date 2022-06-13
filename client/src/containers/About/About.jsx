@@ -6,23 +6,18 @@ import "./About.css";
 
 const abouts = [
   {
-    title: "Web Development",
-    description: "I am a good web developer",
-    imgUrl: images.figma,
-  },
-  {
-    title: "Frontend Development",
-    description: "I am a good web developer",
+    title: "Frontend Web Development",
+    description: "I am a frontend developer with a passion for building beautiful and functional websites.",
     imgUrl: images.graphql,
   },
   {
     title: "MERN Stack",
-    description: "I am a good web developer",
+    description: "I have knowledge and experience working with the MERN Stack, as well as mySQL.",
     imgUrl: images.typescript,
   },
   {
     title: "App Development",
-    description: "I am a good web developer",
+    description: "I build mobile apps using React Native and Swift.",
     imgUrl: images.redux,
   },
 ];

@@ -7,5 +7,6 @@ import node from "../assets/node.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import typescript from "../assets/typescript.png"; 
+import git from "../assets/git.png";
 
-export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript };
+export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript, git };

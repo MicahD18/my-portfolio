@@ -50,7 +50,7 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "blue",
+    backgroundColor: "#313bac",
     "@media (min-width: 750px)": {
       display: "none",
     },
