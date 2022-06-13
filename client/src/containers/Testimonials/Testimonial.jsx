@@ -24,7 +24,7 @@ const Testimonial = () => {
 
   return (
     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
-      {testimonials.length && (
+      {/* {testimonials.length && (
         <div>
             <div></div>
           <div className="app__testimonial-item app__flex">
@@ -82,7 +82,7 @@ const Testimonial = () => {
             <img src={brand.imgUrl} alt={brand.name} />
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

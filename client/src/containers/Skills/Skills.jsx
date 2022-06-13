@@ -19,7 +19,7 @@ const experiences = [
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
       <h2 className="head-text">Skills & Work Experience</h2>
 
       <div className="app__skills-container">

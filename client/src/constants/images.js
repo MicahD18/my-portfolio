@@ -8,5 +8,7 @@ import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import typescript from "../assets/typescript.png"; 
 import git from "../assets/git.png";
+import email from "../assets/email.png";
+import mobile from "../assets/mobile.png";
 
-export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript, git };
+export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript, git, email, mobile };

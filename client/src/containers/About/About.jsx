@@ -24,7 +24,7 @@ const abouts = [
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <h2 className="head-text">
         I Build Websites to Help <span>People</span> <br /> and{" "}
         <span>Business</span>

@@ -27,7 +27,7 @@ const Work = () => {
   };
 
   return (
-    <div>
+    <div id="work">
       <h2 className="head-text">
         My Creative <span>Portfolio</span>
       </h2>
