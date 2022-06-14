@@ -4,6 +4,9 @@ import { images } from "../../constants";
 
 import "./Navbar.css";
 
+import { BrowserRouter } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -84,8 +87,8 @@ const useStyles = makeStyles(() => ({
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
     "@media (min-width: 750px)": {
-      display: "none"
-    }
+      display: "none",
+    },
   },
   close__button: {
     width: "35px",
@@ -93,8 +96,16 @@ const useStyles = makeStyles(() => ({
     color: "black",
     margin: "0.5rem 32vw",
     marginTop: "30px",
-  }
+  },
 }));
+
+const menuItems = [
+  { name: "home" },
+  { name: "about" },
+  { name: "work" },
+  { name: "skills" },
+  { name: "contact" },
+];
 
 const Navbar = () => {
   const classes = useStyles();
@@ -103,25 +114,23 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div >
+      <div>
         <Toolbar position="static" className={classes.appBar}>
           <img
             src={images.logo}
             alt="logo"
             className={classes.app__navbar_logo}
           />
-          <ul className="app__navbar-links">
-            {["home", "about", "work", "skills", "contact"].map(
-              (item, index) => {
-                return (
-                  <li key={index}>
-                    <div />
-                    <a>{item}</a>
-                  </li>
-                );
-              }
-            )}
-          </ul>
+          <div className="app__navbar-links">
+            {menuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <div />
+                  <a href={`#${item.name}`}>{item.name}</a>
+                </li>
+              );
+            })}
+          </div>
           <div className={classes.app__navbar_menu}>
             <IconButton className={classes.menu}>
               <MenuIcon
@@ -138,8 +147,8 @@ const Navbar = () => {
           <IconButton className={classes.close__button}>
             <CloseIcon onClick={() => setToggle(false)} />
           </IconButton>
-          <ul className={classes.app__navbar_links}>
-            {["home", "about", "work", "skills", "contact"].map(
+          <div className={classes.app__navbar_links}>
+            {menuItems.map(
               (item, index) => {
                 return (
                   <div>
@@ -153,13 +162,13 @@ const Navbar = () => {
                         fontSize: "18px",
                       }}
                     >
-                      <a>{item}</a>
+                      <a href={`#${item.name}`}>{item.name}</a>
                     </li>
                   </div>
                 );
               }
             )}
-          </ul>
+          </div>
         </div>
       )}
     </nav>
