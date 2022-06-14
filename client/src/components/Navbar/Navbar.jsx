@@ -40,6 +40,10 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    position: "fixed",
+    width: "100%",
+    marginTop: "-25px",
+    zIndex: 10,
   },
   app__navbar_logo: {
     width: "225px",
@@ -86,6 +90,7 @@ const useStyles = makeStyles(() => ({
     flexDirection: "column",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
+    zIndex: 10,
     "@media (min-width: 750px)": {
       display: "none",
     },
@@ -126,7 +131,9 @@ const Navbar = () => {
               return (
                 <li key={index}>
                   <div />
-                  <a href={`#${item.name}`}>{item.name}</a>
+                  <a style={{ textDecoration: "none" }} href={`#${item.name}`}>
+                    {item.name}
+                  </a>
                 </li>
               );
             })}
@@ -148,26 +155,30 @@ const Navbar = () => {
             <CloseIcon onClick={() => setToggle(false)} />
           </IconButton>
           <div className={classes.app__navbar_links}>
-            {menuItems.map(
-              (item, index) => {
-                return (
-                  <div>
-                    <li
-                      key={index}
-                      style={{
-                        marginBottom: "45px",
-                        cursor: "pointer",
-                        display: "flex",
-                        flexDirection: "column",
-                        fontSize: "18px",
-                      }}
+            {menuItems.map((item, index) => {
+              return (
+                <div>
+                  <li
+                    key={index}
+                    style={{
+                      marginBottom: "45px",
+                      cursor: "pointer",
+                      display: "flex",
+                      flexDirection: "column",
+                      fontSize: "18px",
+                      textDecoration: "none",
+                    }}
+                  >
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href={`#${item.name}`}
                     >
-                      <a href={`#${item.name}`}>{item.name}</a>
-                    </li>
-                  </div>
-                );
-              }
-            )}
+                      {item.name}
+                    </a>
+                  </li>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}

@@ -35,6 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 125px;
 }
 .app__header-badge .badge-cmp,
 .app__header-badge .tag-cmp {

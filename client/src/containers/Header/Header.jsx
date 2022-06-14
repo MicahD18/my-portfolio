@@ -19,7 +19,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id="header">
+    <div id="home">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
