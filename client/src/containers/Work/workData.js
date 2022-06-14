@@ -12,7 +12,7 @@ const works = [
     imgUrl: "https://cdn-icons-png.flaticon.com/512/2702/2702069.png",
     name: "web app",
     projectLink: "https://book-library-app-76e5a.firebaseapp.com",
-    codeLink: "",
+    codeLink: "https://github.com/MicahD18/book-library-app/tree/main/client",
     title: "Book Library App",
     description:
       "A simple CRUD App where you can add and remove books to your library.",
