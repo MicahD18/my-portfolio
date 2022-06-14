@@ -8,17 +8,17 @@ const abouts = [
   {
     title: "Frontend Web Development",
     description: "I am a frontend developer with a passion for building beautiful and functional websites.",
-    imgUrl: images.graphql,
+    imgUrl: images.frontend,
   },
   {
     title: "MERN Stack",
     description: "I have knowledge and experience working with the MERN Stack, as well as mySQL.",
-    imgUrl: images.typescript,
+    imgUrl: images.laptop,
   },
   {
     title: "App Development",
     description: "I build mobile apps using React Native and Swift.",
-    imgUrl: images.redux,
+    imgUrl: images.app,
   },
 ];
 
