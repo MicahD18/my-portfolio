@@ -152,3 +152,8 @@
     margin: 2rem 0;
   }
 }
+
+.badge-cmp p {
+  position: absolute;
+  margin-top: 0px;
+}
