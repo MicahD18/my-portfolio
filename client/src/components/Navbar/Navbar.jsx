@@ -4,9 +4,6 @@ import { images } from "../../constants";
 
 import "./Navbar.css";
 
-import { BrowserRouter } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -18,6 +15,7 @@ import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles(() => ({
   menu: {
+    color: "#18274C",
     "@media (min-width: 750px)": {
       display: "none",
     },
@@ -30,13 +28,12 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-around",
     width: "40vw",
     marginLeft: "15vw",
-    cursor: "pointer",
     "@media (max-width: 750px)": {
       display: "none",
     },
   },
   appBar: {
-    backgroundColor: "#F0F0F0",
+    backgroundColor: "#18274C",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -57,7 +54,8 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#313bac",
+    backgroundColor: "white",
+    color: "#18274C",
     "@media (min-width: 750px)": {
       display: "none",
     },
@@ -76,7 +74,7 @@ const useStyles = makeStyles(() => ({
     marginLeft: "50px",
   },
   mobile__navbar_menu: {
-    backgroundColor: "#F0F0F0",
+    backgroundColor: "#18274C",
     position: "fixed",
     float: "right",
     top: 0,
@@ -98,7 +96,7 @@ const useStyles = makeStyles(() => ({
   close__button: {
     width: "35px",
     height: "35px",
-    color: "black",
+    color: "white",
     margin: "0.5rem 32vw",
     marginTop: "30px",
   },
@@ -131,7 +129,7 @@ const Navbar = () => {
               return (
                 <li key={index}>
                   <div />
-                  <a style={{ textDecoration: "none" }} href={`#${item.name}`}>
+                  <a href={`#${item.name}`}>
                     {item.name}
                   </a>
                 </li>
@@ -142,7 +140,7 @@ const Navbar = () => {
             <IconButton className={classes.menu}>
               <MenuIcon
                 onClick={() => setToggle(true)}
-                style={{ color: "white" }}
+                style={{ color: "#18274C" }}
               />
             </IconButton>
           </div>
@@ -162,7 +160,6 @@ const Navbar = () => {
                     key={index}
                     style={{
                       marginBottom: "45px",
-                      cursor: "pointer",
                       display: "flex",
                       flexDirection: "column",
                       fontSize: "18px",
@@ -170,7 +167,7 @@ const Navbar = () => {
                     }}
                   >
                     <a
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", }}
                       href={`#${item.name}`}
                     >
                       {item.name}

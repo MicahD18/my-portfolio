@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import profile from "../assets/profile.jpg";
 import figma from "../assets/figma.png";
 import graphql from "../assets/graphql.png";

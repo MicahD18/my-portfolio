@@ -1,5 +1,4 @@
 li {
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -15,11 +14,9 @@ li:hover {
     justify-content: space-around;
     width: 40vw;
     margin-left: 15vw;
-    cursor: pointer;
 }
 .app__navbar-links li {
     margin: 0 1rem;
-    cursor: pointer;
     flex-direction: column;
 }
 .app__navbar-links li div {
@@ -34,4 +31,18 @@ li:hover {
     .app__navbar-links {
         display: none;
     }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #00FFFF;
+}
+
+a:visited {
+    color: white;
 }
