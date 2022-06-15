@@ -13,5 +13,6 @@ import mobile from "../assets/mobile.png";
 import frontend from "../assets/frontend_icon.png";
 import laptop from "../assets/laptop_icon.png";
 import app from "../assets/mobile_icon.png";
+import swift from "../assets/swift.png";
 
-export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript, git, email, mobile, frontend, laptop, app };
+export default { logo, profile, figma, graphql, javascript, node, react, redux, typescript, git, email, mobile, frontend, laptop, app, swift };

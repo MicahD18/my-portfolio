@@ -10,6 +10,7 @@ const skills = [
   { name: "React", bgColor: "white", icon: images.react },
   { name: "Javascript", bgColor: "white", icon: images.javascript },
   { name: "Node", bgColor: "white", icon: images.node },
+  { name: "Swift", bgColor: "white", icon: images.swift },
 ];
 
 const experiences = [
