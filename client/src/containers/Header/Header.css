@@ -1,3 +1,7 @@
+#home {
+  padding-top: 25px;
+}
+
 .app__header {
   flex: 1;
   width: 100%;

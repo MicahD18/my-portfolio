@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 
 import { images } from "../../constants";
@@ -7,17 +7,20 @@ import "./About.css";
 const abouts = [
   {
     title: "Frontend Web Development",
-    description: "I am a frontend developer with a passion for building beautiful and functional websites.",
+    description:
+      "Frontend developer with a passion for building beautiful and functional websites.",
     imgUrl: images.frontend,
   },
   {
     title: "MERN Stack",
-    description: "I have knowledge and experience working with the MERN Stack, as well as mySQL.",
+    description:
+      "Knowledge and experience working with the MERN Stack, as well as mySQL.",
     imgUrl: images.laptop,
   },
   {
     title: "App Development",
-    description: "I build mobile apps using React Native and Swift.",
+    description:
+      "Experience building mobile apps using React Native and Swift.",
     imgUrl: images.app,
   },
 ];
@@ -52,7 +55,7 @@ const About = () => {
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

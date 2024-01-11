@@ -8,14 +8,17 @@ import { images } from "../../constants";
 const skills = [
   { name: "Git", bgColor: "white", icon: images.git },
   { name: "React", bgColor: "white", icon: images.react },
-  { name: "Javascript", bgColor: "white", icon: images.javascript },
-  { name: "Node", bgColor: "white", icon: images.node },
+  { name: "Angular", bgColor: "white", icon: images.angular },
+  { name: "Typescript", bgColor: "white", icon: images.typescript },
   { name: "Swift", bgColor: "white", icon: images.swift },
 ];
 
 const experiences = [
-  { name: "College Student", company: "Northwest Tech", year: "2020-2022" },
-  { name: "Frontline Employee", company: "Arby's", year: "2019-2022" },
+  {
+    name: "Frontend Web Developer",
+    company: "Goodland Tech",
+    year: "Feb 2023 - Jan 2024",
+  },
 ];
 
 const Skills = () => {
@@ -50,7 +53,7 @@ const Skills = () => {
                 <p style={{ fontWeight: "bolder", fontSize: "20px" }}>
                   {experience.name}
                 </p>
-                <div style={{marginTop: "15px"}}>
+                <div style={{ marginTop: "15px" }}>
                   <p
                     style={{
                       fontWeight: "400",

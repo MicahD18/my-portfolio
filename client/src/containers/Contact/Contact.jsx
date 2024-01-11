@@ -40,13 +40,17 @@ const Contact = () => {
       }}
       id="contact"
     >
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Contact Me</h2>
+      <p>
+        Got a cool project in mind? Send me a message. I'd love to hear about
+        it!
+      </p>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:micah.daise@nwktc.edu" className="p-text">
-            micah.daise@nwktc.edu
+          <a href="mailto:mdaise20@gmail.com" className="p-text">
+            mdaise20@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
@@ -78,7 +82,9 @@ const Contact = () => {
                 onChange={handleChangeInput}
               />
             </div>
-            <a href={`mailto: micah.daise@nwktc.edu?cc=${email}&subject=&body=${message}`}>
+            <a
+              href={`mailto: micah.daise@nwktc.edu?cc=${email}&subject=&body=${message}`}
+            >
               <button type="button" className="p-text" onClick={handleSubmit}>
                 Send Message
               </button>

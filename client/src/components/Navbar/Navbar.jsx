@@ -117,7 +117,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div>
+      <div style={{ paddingTop: "25px" }}>
         <Toolbar position="static" className={classes.appBar}>
           <img
             src={images.logo}
@@ -129,9 +129,7 @@ const Navbar = () => {
               return (
                 <li key={index}>
                   <div />
-                  <a href={`#${item.name}`}>
-                    {item.name}
-                  </a>
+                  <a href={`#${item.name}`}>{item.name}</a>
                 </li>
               );
             })}
@@ -167,7 +165,7 @@ const Navbar = () => {
                     }}
                   >
                     <a
-                      style={{ textDecoration: "none", }}
+                      style={{ textDecoration: "none" }}
                       href={`#${item.name}`}
                     >
                       {item.name}

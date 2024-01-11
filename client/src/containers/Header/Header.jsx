@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./Header.css";
 import { images } from "../../constants";
 
-const mainSkills = [images.react, images.javascript, images.node];
+const mainSkills = [images.react, images.angular, images.typescript];
 
 const scaleVariants = {
   whileInView: {
@@ -50,7 +50,7 @@ const Header = () => {
           width: "100%",
         }}
       >
-        <div></div>
+        {/* <div></div>
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -58,7 +58,7 @@ const Header = () => {
         >
           <img src={images.profile} alt="profile_bg" />
         </motion.div>
-        <div></div>
+        <div></div> */}
       </div>
 
       <motion.div
