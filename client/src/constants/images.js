@@ -15,6 +15,7 @@ import frontend from "../assets/frontend_icon.png";
 import laptop from "../assets/laptop_icon.png";
 import app from "../assets/mobile_icon.png";
 import swift from "../assets/swift.png";
+import hcj from "../assets/html-css-javascript.png";
 
 export default {
   logo,
@@ -34,4 +35,5 @@ export default {
   laptop,
   app,
   swift,
+  hcj,
 };

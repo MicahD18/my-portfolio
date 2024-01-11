@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 import "./Header.css";
 import { images } from "../../constants";
 
-const mainSkills = [images.react, images.angular, images.typescript];
+const mainSkills = [
+  images.hcj,
+  images.react,
+  images.angular,
+  images.typescript,
+];
 
 const scaleVariants = {
   whileInView: {
