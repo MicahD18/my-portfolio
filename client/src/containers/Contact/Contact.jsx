@@ -41,7 +41,13 @@ const Contact = () => {
       id="contact"
     >
       <h2 className="head-text">Contact Me</h2>
-      <p>
+      <p
+        style={{
+          paddingLeft: "50px",
+          paddingRight: "50px",
+          textAlign: "center",
+        }}
+      >
         Got a cool project in mind? Send me a message. I'd love to hear about
         it!
       </p>

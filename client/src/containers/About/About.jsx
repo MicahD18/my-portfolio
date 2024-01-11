@@ -18,7 +18,7 @@ const abouts = [
     imgUrl: images.laptop,
   },
   {
-    title: "App Development",
+    title: "Mobile App Development",
     description:
       "Experience building mobile apps using React Native and Swift.",
     imgUrl: images.app,
@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div id="about">
       <h2 className="head-text">
-        I Build Websites to Help <span>People</span> <br /> and{" "}
+        I Build Apps to Help <span>People</span> <br /> and{" "}
         <span>Business</span>
       </h2>
 

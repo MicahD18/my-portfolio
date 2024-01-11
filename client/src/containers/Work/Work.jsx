@@ -8,7 +8,7 @@ import works from "./workData";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [filterWork, setFilterWork] = useState([]);
+  const [filterWork, setFilterWork] = useState(works);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   const handleWorkFilter = (item) => {
@@ -21,7 +21,7 @@ const Work = () => {
       if (item === "All") {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags === item));
+        setFilterWork(works.filter((work) => work.tags[0] === item));
       }
     }, 500);
   };
@@ -32,15 +32,14 @@ const Work = () => {
         My <span>Portfolio</span>
       </h2>
 
-      {/* <div className="app__work-filter">
-        {["React JS", "Javascript", "Node JS", "All"].map((item, index) => {
-          
+      <div className="app__work-filter">
+        {["React", "Angular", "Swift", "All"].map((item, index) => {
           return (
             <div
-              key={index}
               onClick={() => {
-                handleWorkFilter(item)
+                handleWorkFilter(item);
               }}
+              key={index}
               className={`app__work-filter-item app__flex p-text ${
                 activeFilter === item ? "item-active" : ""
               }`}
@@ -49,14 +48,14 @@ const Work = () => {
             </div>
           );
         })}
-      </div> */}
+      </div>
 
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {works.map((work, index) => {
+        {filterWork.map((work, index) => {
           return (
             <div className="app__work-item app__flex" key={index}>
               <div className="app__work-img app__flex">
